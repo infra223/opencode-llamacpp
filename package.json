@@ -1,0 +1,32 @@
+{
+  "name": "opencode-llamacpp",
+  "version": "0.1.0",
+  "description": "OpenCode plugin that discovers models from a llama.cpp llama-server and registers them as a provider, with API-key auth resolved through an integration env method.",
+  "type": "module",
+  "main": "index.ts",
+  "exports": {
+    ".": "./index.ts"
+  },
+  "files": [
+    "index.ts",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node --experimental-strip-types test/auth.mts && node --experimental-strip-types test/config-provider.mts && node --experimental-strip-types test/options.mts"
+  },
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "llamacpp",
+    "llama-server",
+    "local-llm"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/infra223/opencode-llamacpp.git"
+  },
+  "dependencies": {
+    "@opencode/plugin": "^2.0.15"
+  }
+}
